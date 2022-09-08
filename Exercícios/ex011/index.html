@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+                         <!--largura-->
+        <source media="(max-width: 600px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture> 
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--MP3 WAV OGG-->
+    <h2>Modo simples</h2>
+    <audio src="midias/guanacast.mp3" controls autoplay></audio>
+    
+    <h2>Outro modo</h2>
+    <audio preload="metadata" autoplay controls loop>
+                <!--auto: só vai ser considerar que o site terminou de carregar, depois de carregar todo o áudio também-->
+                <!--metadata: só vai carregar o nome do arquivo, a data, duração e só algumas informações-->
+                <!--none: não vai carregar asolutamente nada, só quando o usuario apertar play lá nos controles-->
+            <!--loop: quando chegar no final do audio, ele recomeça-->
+        
+          <!--source:src-->
+        <source src="midias/guanacast.mp3" type="audio/mpeg">
+        <source src="midias/guanacast.wav" type="audio/wav"> <!--arquivo MUITO pesado-->
+        <source src="midias/guanacast.ogg" type="audio/ogg">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. 
+            <a href="midias/guanacast.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
