@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios
 
-<a href="https://github.com/rayanegarcia/projeto-android.git">Projeto Android</a>
+<a href="https://rayanegarcia.github.io/projeto-android/">Projeto Android</a>
